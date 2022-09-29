@@ -243,6 +243,42 @@ main section .underline span{
 main section hr{
     border-color: var(--colorprincipal);
 }
+
+main section .grid{
+    margin: var(--margingrid);
+    
+}
+
+main section .grid i{
+    color: var(--colorprincipal);
+
+}
+
+main section div{
+    border-width: 2px;
+    border-style: 1;
+    border-color: var(--colorprincipal);
+
+}
+
+main section h3{
+    font-family: var(--colorsecundario);
+    font-size: 1em;
+    font-weight: bold;
+    padding: 1em;
+}
+
+main section p{
+    font-family: var(--fuenteprincipal);
+    color: var(--colorsecundario);
+
+}
+
+main section .grid hr{
+    border-color: var(--colorsecundario);
+}
+
+
 /*Fin OurServices*/
 
 
@@ -282,4 +318,4 @@ main section hr{
     header nav .container .menu li{
         display: inline-block;
     }
-}++
+}
