@@ -113,7 +113,6 @@ header nav .container .menu li :is(a:hover, .activo){
 /*Fin header*/
 
 /*Inicio footer*/
-
 footer{
     background-color: var(--colorsecundario);
     padding: 1.25em 0em;
@@ -141,10 +140,6 @@ footer a:hover{
     right: 0.25em;
     font-size: 300%;
 }
-
-
-
-
 /*Fin footer*/
 
 
