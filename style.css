@@ -211,7 +211,7 @@ footer a:hover{
 
 /*Inicio OurServices*/
 
-main .section{
+main section{
     padding: 2.125em 1.5em;
 }
 
@@ -223,7 +223,7 @@ main section h2{
 }
 
 main section h2 span{
-    color: var(--colorprincipal)
+    color: var(--colorprincipal);
 }
 
 main section .underline{
@@ -245,39 +245,49 @@ main section hr{
 }
 
 main section .grid{
-    margin: var(--margingrid);
+    display: flex;
+    flex-wrap: wrap;
     
 }
 
-main section .grid i{
-    color: var(--colorprincipal);
-
+main section .grid article{
+    width: 100%;
+    border-bottom: 1px solid #aaa ;
+    padding: 1.5em 0;
 }
 
-main section div{
-    border-width: 2px;
-    border-style: 1;
-    border-color: var(--colorprincipal);
-
+main section article>div .fa-solid{
+    color: var(--colorprincipal);
+    padding: 0.75em;
+    border: 1px solid var(--colorprincipal);
+    font-size: 120%;
 }
 
 main section h3{
     font-family: var(--colorsecundario);
-    font-size: 1em;
-    font-weight: bold;
-    padding: 1em;
+    font-size: 110%;
+    font-weight: 700;
+    margin: 0.625em 0em;
 }
 
-main section p{
-    font-family: var(--fuenteprincipal);
-    color: var(--colorsecundario);
-
+main p{
+    color: #666;
+    line-height: 1.25;
+    font-size: 95%;
 }
 
-main section .grid hr{
-    border-color: var(--colorsecundario);
+main section article p{
+    margin-bottom: 0.5em;
 }
 
+.enlace{
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--colorprincipal);
+}
+.fa-truck{
+    transform: rotateY(180deg);
+}
 
 /*Fin OurServices*/
 
@@ -285,6 +295,17 @@ main section .grid hr{
 /*mediasqueries*/
 @media(min-width: 37.5em){ /*600px tablet*/
 
+    main section .grid article{
+        width: 50%;
+        border-bottom: none;
+        border-left: 1px solid #333;
+        padding: 1.5em;
+        margin-top: 1em;
+    }
+
+    main section .grid article:last-child{
+        width: 100%;
+    }
 }
 
 @media(min-width: 48em){ /*768px tablet grande o pantalla pequeña*/
@@ -297,6 +318,12 @@ main section .grid hr{
        text-align: left;
         
     }
+
+    main section .grid :is(article, article:last-child){
+        width: 33.333%;
+    }
+
+
 }
 
 @media(min-width: 62.75em){ /* 1004px pantalla*/
