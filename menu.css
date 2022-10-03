@@ -32,11 +32,13 @@ img{
 .container{
     max-width: var(--anchomaximo);
     margin: 0 auto;
+    
 }
 
 body{
     font-family: var(--fuenteprincipal);
     font-size: var(--fontside);
+    background-color: var(--colorsecundario);
 }
 
 /* Inicio header*/ 
@@ -114,6 +116,51 @@ header nav .container .menu li :is(a:hover, .activo){
 }
 /*Fin header*/
 
+/* Inicio Menú del día*/
+
+main section .container{
+    text-align: center;
+    font-weight: 600;
+    margin-top: 2em;
+}
+
+main .container h2{
+    font-family: var(--fuentetitulos);
+    font-size: 2em;
+    color: white;
+}
+
+main .container span{
+    color: var(--colorprincipal);
+    font-size: 1.25em;
+    margin: var(--margingrid) 0;
+    color: var(--colorprincipal);
+}
+
+main section .underline{
+    position: relative;
+    width: 6.250em;
+    margin: 0 auto;
+    color: var(--colorprincipal);
+    font-weight: 700;
+    text-align: center;
+}
+
+main section .underline span{
+    position: absolute;
+    top: -1.4em;
+
+}
+
+main section hr{
+    border-color: var(--colorprincipal);
+}
+
+
+
+
+/*Fin Menú del día*/
+
 /*Inicio footer*/
 
 footer{
@@ -145,198 +192,7 @@ footer a:hover{
 }
 /*Fin footer*/
 
-/*Inicio hero*/
-.hero{
-    background-image: url(./images/fondo.jpg);
-    height: 60vh;
-    background-size: cover;
-    background-position: center center;
-    background-color: #999;
-    background-blend-mode: multiply;
-    color: white;
-    display: flex;
-}
 
-.hero .container{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 90%;
-}
-
-.hero h1{
-    font-family: var(--fuentetitulos);
-    font-size: 2em;
-}
-
-.hero h2{
-    color: var(--colorprincipal);
-    font-size: 1.25em;
-    margin: var(--margingrid) 0;
-}
-
-.hero p{
-    font-size: 1.15em;
-}
-
-.boton{ 
-    display: inline-block;
-    background-color: var(--colorprincipal);
-    color: white;
-    text-decoration: none;
-    padding: 1.15em;
-    margin: var(--margingrid) 0;
-    border: 1px solid var(--colorprincipal);
-}
-
-.boton:hover{
-    background-color: transparent;
-    color:var(--colorprincipal);
-}
-
-.boton:hover i{
-    transition: 0.5s;
-    transform: translatex(5px) scale(1.5);
-}
-    
-.hero ul{
-    display: flex;
-    width: 9em;
-    justify-content: space-between;
-}
-
-.hero ul a{
-    color: white;
-    text-decoration: none;
-    font-size: 2em;
-}
-/*Fin hero*/
-
-/*Inicio OurServices*/
-
-main section{
-    padding: 2.125em 1.5em;
-}
-
-main section h2{
-    color: black;
-    font-family: var(--fuentetitulos);
-    font-size: 2em;
-    text-align: center;
-}
-
-main section h2 span{
-    color: var(--colorprincipal);
-}
-
-main section .underline{
-    position: relative;
-    width: 6.250em;
-    margin: 0 auto;
-    color: var(--colorprincipal);
-    font-weight: 700;
-    text-align: center;
-}
-
-main section .underline span{
-    position: absolute;
-    top: -0.4em;
-}
-
-main section hr{
-    border-color: var(--colorprincipal);
-}
-
-main section .grid{
-    display: flex;
-    flex-wrap: wrap;
-    
-}
-
-main section .grid article{
-    width: 100%;
-    border-bottom: 1px solid #aaa ;
-    padding: 1.5em 0;
-}
-
-main section article>div .fa-solid{
-    color: var(--colorprincipal);
-    padding: 0.75em;
-    border: 1px solid var(--colorprincipal);
-    font-size: 120%;
-}
-
-main section article h3{
-    font-family: var(--colorsecundario);
-    font-size: 110%;
-    font-weight: 700;
-    margin: 0.625em 0em;
-}
-
-main p{
-    color: #666;
-    line-height: 1.25;
-    font-size: 95%;
-}
-
-main section article p{
-    margin-bottom: 0.5em;
-}
-
-.enlace{
-    text-decoration: none;
-    font-weight: 700;
-    color: var(--colorprincipal);
-}
-.fa-truck{
-    transform: rotateY(180deg);
-}
-
-/*Fin Nuestros Servicios*/
-
-/*Inicio Sobre Nosotros*/
-
-main #aboutus{
-    margin-bottom: 4.375em;
-}
-
-main section .flex{
-    display: flex;
-    flex-direction: column;
-}
-
-main section .flex h3{
-    font-weight: 700;
-    font-size: 110%;
-}
-
-main section .flex h4{
-    color: var(--colorprincipal);
-    margin: var(--margingrid);
-}
-
-main section .flex .imagen{
-    width: 95%;
-    margin: 2.5em auto;
-}
-
-main section .flex .imagen .marco{
-    border: 3px solid var(--colorprincipal);
-    transform: rotateZ(10deg);
-    transition: 1s;
-}
-
-main section .flex .imagen .marco img{
-    transform: rotateZ(-10deg);
-    transition: 1s;
-}
-
-main section .flex .imagen:hover :is(.marco, .marco img){
-    transform: rotateZ(0deg);
-}
-
-
-/*Fin Sobre Nosotros*/
 
 
 /*mediasqueries*/
