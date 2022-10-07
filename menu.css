@@ -120,7 +120,7 @@ header nav .container .menu li :is(a:hover, .activo){
 
 main section .container{
     text-align: center;
-    font-weight: 600;
+    font-weight: 700;
     margin-top: 2em;
 }
 
@@ -156,8 +156,81 @@ main section hr{
     border-color: var(--colorprincipal);
 }
 
+main .lista li{
+    color: white;
+    padding: 1em;
+    margin: var(--margingrid);
+    font-weight: 700;
+    
+}
 
+main .lista li:first-child{
+    background-color: var(--colorprincipal);
+    margin: var(--margingrid);
+    margin-top: 3em;
+    padding: 0.8em;
+    border-radius: 0.3em;
+}
 
+main .ofertas h3{
+    color: white;
+    margin-top: 3em;
+    font-weight: 700;
+}
+
+main .ofertas hr{
+    color: var(--colorprincipal);
+    width: 4em;
+    margin: var(--margingrid);
+    margin-top: 1em;
+
+ 
+}
+
+main .ofertas p{
+    color: white;
+    padding: 1em;
+    margin-bottom: 3em;
+}
+
+main section img{
+    padding: 1em;
+    margin-top: -3em;
+
+}
+
+main div h3{
+    color:white;
+    margin-top: -1em;
+    margin: var(--margingrid);
+    font-weight: 700;
+}
+
+main div h3 span{
+    color: var(--colorprincipal);
+    padding-left: 1em;
+}
+
+main div h4{
+    color: white;
+    padding: 1em;
+}
+
+main div a{
+    color: var(--colorprincipal);
+    margin: 1em;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+main div a:last-child{
+    padding-bottom: 5em;
+}
+
+main div i:last-child{
+    color: var(--colorprincipal);
+    padding-bottom: 5em;
+}
 
 /*Fin Menú del día*/
 
@@ -179,7 +252,8 @@ footer a{
 }
 
 footer a:hover{
-    color: var(--colorprincipal)
+    color: var(--colorprincipal);
+    margin-bottom: 6em;
 }
 
 .flecha a{
@@ -257,5 +331,11 @@ footer a:hover{
 
     header nav .container .menu li{
         display: inline-block;
+    }
+
+
+
+    main div img{
+        width: min-content;
     }
 }

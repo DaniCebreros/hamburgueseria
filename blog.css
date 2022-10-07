@@ -157,25 +157,29 @@ main section hr{
 
 main .grid{
     margin: var(--margingrid);
-    padding: 2.125em 1.5em;
+    padding: 1em;
     display: flex;
+    flex-wrap: wrap;
+    
+}
+
+
+main .grid article{
+    width: 50%;
+    padding: 0.6em;
     
 
 }
 
-
-main .grid article:last-child{
-    position: relative;
-
-}
-
 main .grid .fecha{
-    background-color: var(--colorprincipal);
+    background-color: rgba(255, 85, 0, 0.5);
     position: absolute;
-    height: 2em;
-    width: 2em;
+    height: auto;
+    width: 4em;
     text-align: center;
+    padding: 1em;
     color: white;
+    font-weight: 600;
 }
 
 
@@ -183,20 +187,23 @@ main .grid h3{
     color: var(--colorsecundario);
     font-size: 1.25em;
     font-weight: 600;
-    width: 50%;
     padding: 1em 0em;
+    margin-left: 0.5em;
+    
 }
 
 main .grid h4{
     color: var(--colorprincipal);
     font-weight: 600;
     padding: 1em 0em;
+    margin-left: 0.5em;
 }
 
 main .grid p{
     width: 50%;
     color: grey;
     padding: 1em 0em;
+    margin-left: 0.5em;
 }
 
 main .grid a{
@@ -204,6 +211,11 @@ main .grid a{
     text-decoration: none;
     font-weight: 600;
     padding: 1em 0em;
+    margin-left: 0.5em;
+}
+
+main .grid a:last-child{
+    padding-bottom: 5em;
 }
 
 /*Fin Blog*/
@@ -242,17 +254,14 @@ footer a:hover{
 /*mediasqueries*/
 @media(min-width: 37.5em){ /*600px tablet*/
 
-    main section .grid article{
-        width: 50%;
+   /*  main section .grid{
         border-bottom: 0px;
-        border-left: 1px solid #aaa;
         padding: 1.5em;
         margin-top: 1em;
-    }
+        
+    } */
 
-    main section .grid article:last-child{
-        width: 100%;
-    }
+    
 }
 
 @media(min-width: 48em){ /*768px tablet grande o pantalla pequeña*/
@@ -265,7 +274,7 @@ footer a:hover{
        text-align: left;
     }
 
-    main section .grid :is(article, article:last-child){
+    main section .grid (article, article:last-child){
         width: 33.333%;
     }
 
@@ -280,7 +289,8 @@ footer a:hover{
     main section .flex{
         margin-top: 2.5em;
     }
-    
+
+
 }
 
 @media(min-width: 62.75em){ /* 1004px pantalla*/
@@ -302,4 +312,36 @@ footer a:hover{
     header nav .container .menu li{
         display: inline-block;
     }
+
+
+main .grid{
+    margin: var(--margingrid);
+    flex-wrap:initial;
+    width: 100%;
+}
+
+main .grid article{
+    padding: 1.25em;
+}
+
+main .grid .fecha{
+    background-color: rgba(255, 85, 0, 0.5);
+    position: absolute;
+    height: 6em;
+    width: 6em;
+    text-align: center;
+    padding: 2em;
+    font-weight: 600;
+}
+main .grid h3{
+    margin-left: 1em;
+}
+
+main .grid h4{
+    margin-left: 1em;
+}
+
+main .grid p{
+    margin-left: 1em;
+}
 }
